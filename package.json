@@ -2,7 +2,7 @@
   "name": "openclaw-deploy",
   "version": "1.0.0",
   "scripts": {
-    "start": "OPENCLAW_GATEWAY_PORT=$PORT openclaw gateway --allow-unconfigured"
+    "start": "OPENCLAW_GATEWAY_PORT=$PORT OPENCLAW_GATEWAY_HOST=0.0.0.0 openclaw gateway --allow-unconfigured"
   },
   "dependencies": {
     "openclaw": "latest"
