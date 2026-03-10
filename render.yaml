@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: openclaw
+    env: node
+    region: singapore
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: HTTPS_PROXY
+        value: ""
+      - key: HTTP_PROXY
+        value: ""
